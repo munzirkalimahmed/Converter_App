@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Converter App</h2>
+    <label for="converter-type">Choose a converter type:</label> 
+    <select name="converter-type" id="converter-type" onclick="Check()"> 
+        <option value="temperature" >Temperature</option> 
+        <option value="area">Area</option>   
+    </select>
+    <!-- <button onclick="Check()">Check</button> -->
+    <br>
+
+<div id="temp">
+    <label for="temperature-type">Choose a temperature type:</label> 
+    <select name="temperature-type" id="temperature-type"> 
+        <option value="Celsius">Celsius</option> 
+        <option value="Fahrenheit">Fahrenheit</option>   
+    </select>
+    
+    <br>
+    <input type="number" id="num" placeholder="0">
+    =
+    <input type="number" id="res" placeholder="0" readonly>
+    <br>
+
+    <button id="button" onclick="Convert()">Convert</button>
+
+</div>
+    <br>
+
+<div id="area">
+    <label for="area-type">Choose a area type:</label> 
+    <select name="area-type" id="area-type"> 
+        <option value="Marla">Marla</option> 
+        <option value="Yard">Yard</option>   
+    </select><br>
+    <input type="number" id="numb" placeholder="0">
+    =
+    <input type="number" id="result" placeholder="0" readonly>
+    <br>
+
+    <button id="button" onclick="Convertt()">Convert</button>
+
+</div>
+
+</div>
+
+
+    <script src="converter.js"></script>
+  
+
+    
+</body>
+</html>
