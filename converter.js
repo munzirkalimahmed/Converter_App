@@ -83,3 +83,11 @@ else{
 }
 
 }
+
+function DoConvert(event) {
+
+    event.preventDefault();
+
+    Convert();
+    Convertt();
+}
